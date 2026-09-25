@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>المواد الدراسية | المنصة التعليمية</title>
+    <meta
+      name="description"
+      content="معلومات مواد السنة أولى ثانوي جذع مشترك علوم وتكنولوجيا وفق المنهاج الجزائري المعتمد."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav nav-with-back">
+        <button class="back-button" type="button" onclick="if (history.length > 1) history.back(); else location.href='index.html';">
+          <span aria-hidden="true">←</span> رجوع
+        </button>
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div class="brand-text">
+            <span class="brand-name">المنصة التعليمية</span>
+            <small>المواد الدراسية</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="index.html">الرئيسية</a>
+          <details class="nav-dropdown active">
+            <summary>المواد</summary>
+            <div class="nav-dropdown-menu">
+              <a href="math.html">الرياضيات</a>
+              <a href="subjects.html#physics">الفيزياء</a>
+              <a href="subjects.html#chemistry">الكيمياء</a>
+              <a href="subjects.html#biology">علوم الطبيعة والحياة</a>
+              <a href="subjects.html#tech">التكنولوجيات</a>
+              <a href="subjects.html#arabic">اللغة العربية</a>
+            </div>
+          </details>
+          <a href="dashboard.html">لوحة المتابعة</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary">دخول الطالب</button>
+          <button class="btn btn-primary">ابدأ الآن</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="subject-page">
+      <div class="container subject-shell">
+        <aside class="sidebar">
+          <h3>المواد</h3>
+          <nav>
+            <a href="#math" class="active">الرياضيات</a>
+            <a href="#physics">الفيزياء</a>
+            <a href="#chemistry">الكيمياء</a>
+            <a href="#biology">علوم الطبيعة</a>
+            <a href="#tech">التكنولوجيات</a>
+            <a href="#arabic">اللغة العربية</a>
+          </nav>
+        </aside>
+
+        <section>
+          <div class="subject-grid">
+            <article class="subject-card" id="math">
+              <h3>الرياضيات</h3>
+              <ul class="subject-list">
+                <li><strong>المحور الأول</strong><span>الأعداد والحساب</span></li>
+                <li><strong>المحور الثاني</strong><span>الترتيب، المجالات، والقيمة المطلقة</span></li>
+                <li><strong>المحور الثالث</strong><span>الحساب الجبري</span></li>
+                <li><strong>المحور الرابع</strong><span>عموميات على الدوال</span></li>
+                <li><strong>المحور الخامس</strong><span>الدوال المرجعية</span></li>
+              </ul>
+              <div class="card-action">
+                <a href="math.html" class="btn btn-primary">فتح البرنامج السنوي</a>
+              </div>
+            </article>
+
+            <article class="subject-card" id="physics">
+              <h3>الفيزياء</h3>
+              <ul class="subject-list">
+                <li><strong>الحركة</strong><span>المفهوم الأساسي</span></li>
+                <li><strong>الطاقة</strong><span>شرح وتطبيق</span></li>
+                <li><strong>التجارب</strong><span>تمارين</span></li>
+              </ul>
+            </article>
+
+            <article class="subject-card" id="chemistry">
+              <h3>الكيمياء</h3>
+              <ul class="subject-list">
+                <li><strong>التركيب الذري</strong><span>أساس المادة</span></li>
+                <li><strong>المحاليل</strong><span>التطبيقات</span></li>
+                <li><strong>التفاعلات</strong><span>التفاعل العلمي</span></li>
+              </ul>
+            </article>
+
+            <article class="subject-card" id="biology">
+              <h3>علوم الطبيعة والحياة</h3>
+              <ul class="subject-list">
+                <li><strong>الخلايا</strong><span>الوحدة الأساسية</span></li>
+                <li><strong>الأنظمة الحيوية</strong><span>المقارنة</span></li>
+                <li><strong>التوازن البيئي</strong><span>تطبيقات</span></li>
+              </ul>
+            </article>
+
+            <article class="subject-card" id="tech">
+              <h3>التكنولوجيات</h3>
+              <ul class="subject-list">
+                <li><strong>مفاهيم تقنية</strong><span>أساسيات</span></li>
+                <li><strong>برمجة بسيطة</strong><span>تطبيق عملي</span></li>
+                <li><strong>أدوات رقمية</strong><span>استعمالها</span></li>
+              </ul>
+            </article>
+
+            <article class="subject-card" id="arabic">
+              <h3>اللغة العربية</h3>
+              <ul class="subject-list">
+                <li><strong>الفهم</strong><span>نصوص وقراءة</span></li>
+                <li><strong>القواعد</strong><span>تمارين</span></li>
+                <li><strong>التعبير</strong><span>إنتاج كتابي</span></li>
+              </ul>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-wrap">
+            <div class="brand-mark">A</div>
+            <div class="brand-text">
+              <span class="brand-name">المنصة التعليمية</span>
+              <small>السنة أولى ثانوي</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="subjects.html">المواد</a>
+          <a href="dashboard.html">لوحة المتابعة</a>
+        </div>
+
+        <div class="footer-copy">© 2026 المنصة التعليمية. جميع الحقوق محفوظة.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>الرياضيات | المنصة التعليمية</title>
+    <meta
+      name="description"
+      content="صفحة مادة الرياضيات والفصول الدراسية."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav nav-with-back">
+        <button class="back-button" type="button" onclick="if (history.length > 1) history.back(); else location.href='index.html';">
+          <span aria-hidden="true">←</span> رجوع
+        </button>
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div class="brand-text">
+            <span class="brand-name">المنصة التعليمية</span>
+            <small>الرياضيات</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="index.html">الرئيسية</a>
+          <details class="nav-dropdown">
+            <summary>المواد</summary>
+            <div class="nav-dropdown-menu">
+              <a href="math.html">الرياضيات</a>
+              <a href="subjects.html#physics">الفيزياء</a>
+              <a href="subjects.html#chemistry">الكيمياء</a>
+              <a href="subjects.html#biology">علوم الطبيعة والحياة</a>
+              <a href="subjects.html#tech">التكنولوجيات</a>
+              <a href="subjects.html#arabic">اللغة العربية</a>
+            </div>
+          </details>
+          <a href="dashboard.html">لوحة المتابعة</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary">مراجعة سريعة</button>
+          <button class="btn btn-primary">اختبار قصير</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="subject-page">
+      <div class="container chapter-select-page">
+        <h1 class="math-page-title">الرياضيات</h1>
+        <ul class="subject-list chapter-list" aria-label="فصول الرياضيات">
+          <li><a href="chapter.html?term=1">الفصل الأول</a></li>
+          <li><a href="chapter.html?term=2">الفصل الثاني</a></li>
+          <li><a href="chapter.html?term=3">الفصل الثالث</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-wrap">
+            <div class="brand-mark">A</div>
+            <div class="brand-text">
+              <span class="brand-name">المنصة التعليمية</span>
+              <small>السنة أولى ثانوي</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="subjects.html">المواد</a>
+          <a href="dashboard.html">لوحة المتابعة</a>
+        </div>
+
+        <div class="footer-copy">© 2026 المنصة التعليمية. جميع الحقوق محفوظة.</div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
