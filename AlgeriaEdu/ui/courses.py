@@ -1,0 +1,1 @@
+"""Courses interface for AlgeriaEdu."""

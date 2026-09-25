@@ -1,0 +1,1 @@
+"""Reports interface for AlgeriaEdu."""

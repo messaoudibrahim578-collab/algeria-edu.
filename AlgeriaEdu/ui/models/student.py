@@ -1,0 +1,1 @@
+"""Student model for AlgeriaEdu."""

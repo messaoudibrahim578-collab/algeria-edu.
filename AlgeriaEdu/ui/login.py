@@ -1,0 +1,1 @@
+"""Login interface for AlgeriaEdu."""

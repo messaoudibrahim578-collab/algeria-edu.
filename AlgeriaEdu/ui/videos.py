@@ -1,0 +1,1 @@
+"""Videos interface for AlgeriaEdu."""

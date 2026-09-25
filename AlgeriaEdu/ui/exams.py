@@ -1,0 +1,1 @@
+"""Exams interface for AlgeriaEdu."""
