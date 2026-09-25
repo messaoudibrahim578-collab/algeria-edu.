@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لوحة متابعة الطالب | المنصة التعليمية</title>
+    <meta
+      name="description"
+      content="لوحة متابعة الطالب في السنة أولى ثانوي، مع متابعة التقدم في المواد الدراسية وفق المنهاج الرسمي."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav nav-with-back">
+        <button class="back-button" type="button" onclick="if (history.length > 1) history.back(); else location.href='index.html';">
+          <span aria-hidden="true">←</span> رجوع
+        </button>
+        <div class="brand-wrap">
+          <div class="brand-mark">A</div>
+          <div class="brand-text">
+            <span class="brand-name">المنصة التعليمية</span>
+            <small>لوحة متابعة الطالب</small>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="التنقل الرئيسي">
+          <a href="index.html">الرئيسية</a>
+          <details class="nav-dropdown">
+            <summary>المواد</summary>
+            <div class="nav-dropdown-menu">
+              <a href="math.html">الرياضيات</a>
+              <a href="subjects.html#physics">الفيزياء</a>
+              <a href="subjects.html#chemistry">الكيمياء</a>
+              <a href="subjects.html#biology">علوم الطبيعة والحياة</a>
+              <a href="subjects.html#tech">التكنولوجيات</a>
+              <a href="subjects.html#arabic">اللغة العربية</a>
+            </div>
+          </details>
+          <a href="index.html#references">المراجع</a>
+          <a href="dashboard.html" class="active">لوحة المتابعة</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary">الخروج</button>
+          <button class="btn btn-primary">مراجعة اليوم</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <div class="container dashboard-shell">
+        <aside class="sidebar">
+          <h3>القائمة</h3>
+          <nav>
+            <a href="dashboard.html" class="active">ملخص اليوم</a>
+            <a href="#progress">التقدم</a>
+            <a href="#schedule">الجدول</a>
+            <a href="#tasks">المهام</a>
+          </nav>
+        </aside>
+
+        <section class="dashboard-content">
+          <div class="dashboard-card">
+            <h3>ملخص الأسبوع</h3>
+            <div class="metric-row">
+              <div class="metric">
+                <strong>6</strong>
+                <span>مواد دراسية</span>
+              </div>
+              <div class="metric">
+                <strong>72%</strong>
+                <span>مستوى الإنجاز</span>
+              </div>
+              <div class="metric">
+                <strong>4</strong>
+                <span>مراجعات</span>
+              </div>
+              <div class="metric">
+                <strong>12</strong>
+                <span>تمارين</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-card" id="progress">
+            <h3>تقدم المواد</h3>
+            <div class="progress-rows">
+              <div class="progress-row">
+                <div class="progress-header">
+                  <span>الرياضيات</span>
+                  <span>82%</span>
+                </div>
+                <div class="bar"><span style="width: 82%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="progress-header">
+                  <span>الفيزياء</span>
+                  <span>70%</span>
+                </div>
+                <div class="bar"><span style="width: 70%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="progress-header">
+                  <span>الكيمياء</span>
+                  <span>64%</span>
+                </div>
+                <div class="bar"><span style="width: 64%"></span></div>
+              </div>
+
+              <div class="progress-row">
+                <div class="progress-header">
+                  <span>علوم الطبيعة والحياة</span>
+                  <span>76%</span>
+                </div>
+                <div class="bar"><span style="width: 76%"></span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="dashboard-card" id="schedule">
+            <h3>الجدول الأسبوعي</h3>
+            <ul class="subject-list">
+              <li><strong>الاثنين</strong><span>رياضيات + تمارين</span></li>
+              <li><strong>الثلاثاء</strong><span>فيزياء + شرح</span></li>
+              <li><strong>الأربعاء</strong><span>كيمياء + مراجعة</span></li>
+              <li><strong>الخميس</strong><span>أحياء + تطبيقات</span></li>
+              <li><strong>الجمعة</strong><span>تكنولوجيات + مراجعة عامة</span></li>
+            </ul>
+          </div>
+
+          <div class="dashboard-card" id="tasks">
+            <h3>المهام اليوم</h3>
+            <ul class="subject-list">
+              <li><strong>التمرين رقم 03</strong><span>رياضيات</span></li>
+              <li><strong>ملخص الحركة</strong><span>فيزياء</span></li>
+              <li><strong>تدريب التجارب</strong><span>كيمياء</span></li>
+              <li><strong>أسئلة مراجعة</strong><span>أحياء</span></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand-wrap">
+            <div class="brand-mark">A</div>
+            <div class="brand-text">
+              <span class="brand-name">المنصة التعليمية</span>
+              <small>السنة أولى ثانوي</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="index.html">الرئيسية</a>
+          <a href="index.html#subjects">المواد</a>
+          <a href="dashboard.html">لوحة المتابعة</a>
+        </div>
+
+        <div class="footer-copy">© 2026 المنصة التعليمية. جميع الحقوق محفوظة.</div>
+      </div>
+    </footer>
+  </body>
+</html>
